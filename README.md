@@ -1,6 +1,6 @@
 # 🤖 vue-fastapi-jwt-ai-agent
 
-Last updated 22-07-2026
+Last updated: 23-07-2026
 
 A Vue 3 frontend using Pinia for state management and JWT authentication, designed to interact with a FastAPI AI Agent API.
 
@@ -15,9 +15,21 @@ The application provides an interface where users can ask questions and receive:
 - Tool observations
 - Error handling feedback
 
-# FastAPI Backend
+## FastAPI Backend
 
-- [`AI Agent API`](https://github.com/persteenolsen/fastapi-jwt-auth-ai-agent-three) - The backend API using FastAPI, JWT authentication, LLM integration, and agent tools such as Wikipedia search.
+https://github.com/persteenolsen/fastapi-jwt-auth-ai-agent-three
+
+The backend API using FastAPI, JWT authentication, LLM integration, and agent tools such as Wikipedia search.
+
+The backend provides:
+
+- JWT authentication
+- Protected AI agent endpoints
+- LLM integration
+- Agent tool execution
+- Structured JSON responses
+
+---
 
 # 🔐 Features
 
@@ -35,6 +47,8 @@ The application provides an interface where users can ask questions and receive:
 - Environment-based API configuration
 - Easy deployment to static hosting
 
+---
+
 # 🧱 Tech Stack
 
 - Node.js 18.19.1
@@ -43,6 +57,8 @@ The application provides an interface where users can ask questions and receive:
 - Vite
 - ESLint
 - VS Code
+
+---
 
 # 📁 Project Structure
 
@@ -61,15 +77,17 @@ The application provides an interface where users can ask questions and receive:
     ├── public                 # Static assets
     └── .env                   # Environment variables
 
+---
+
 # ⚙️ Installation
 
 Clone the repository:
 
-    git clone https://github.com/persteenolsen/vue-fastapi-jwt-ai-agent.git
+    git clone https://github.com/persteenolsen/vue-fastapi-jwt-auth-ai-agent-three.git
 
 Enter the project folder:
 
-    cd vue-fastapi-jwt-ai-agent
+    cd vue-fastapi-jwt-auth-ai-agent-three
 
 Install dependencies:
 
@@ -83,7 +101,9 @@ Open the application:
 
     http://localhost:3000
 
-# 🚀 Development Server
+---
+
+# 🚀 Development
 
 Start the development server:
 
@@ -93,13 +113,13 @@ The application will be available at:
 
     http://localhost:3000
 
+---
+
 # 📦 Production Build
 
 Create a production build:
 
     npm run build
-
-# 👀 Preview Production Build
 
 Preview the production build locally:
 
@@ -109,11 +129,15 @@ Default preview address:
 
     http://localhost:5050
 
-# 🔐 Environment Variables (.env)
+---
+
+# 🔐 Environment Variables
 
 Configure the FastAPI backend URL:
 
     VITE_API_URL=http://127.0.0.1:8000
+
+---
 
 # 🧪 Usage
 
@@ -130,6 +154,8 @@ Configure the FastAPI backend URL:
    - Agent answer
    - Agent action
    - Tool observation
+
+---
 
 # 📡 API Integration
 
@@ -151,7 +177,9 @@ Example response:
 
 The token is stored in the authentication store and automatically included in API requests.
 
-## AI Agent Chat
+---
+
+## Chat
 
 POST `/chat`
 
@@ -172,21 +200,9 @@ Example response:
       }
     }
 
-# 🧠 Key Design Features
+---
 
-- Global Pinia store for authentication state
-- Dedicated Pinia store for AI agent state
-- JWT bearer authentication handling
-- Clean separation between frontend and backend logic
-- Agent response parsing and display
-- Tool action visibility for transparency
-- Observation display for debugging and explainability
-- Environment-based API configuration
-- Vue SPA architecture
-
-# 🤖 AI Agent Workflow
-
-The frontend supports an agent workflow:
+# 🧠 Application Flow
 
     User Question
           |
@@ -209,6 +225,35 @@ The frontend supports an agent workflow:
     Final Answer Returned To User
 
 The user can see both the final answer and the intermediate agent information.
+
+---
+
+# 📋 Displayed Information
+
+The application provides an interface where users can ask questions and receive:
+
+- AI-generated answers
+- Agent actions
+- Tool observations
+- Error handling feedback
+
+---
+
+# 🏗️ Design
+
+# 🧠 Key Design Features
+
+- Global Pinia store for authentication state
+- Dedicated Pinia store for AI agent state
+- JWT bearer authentication handling
+- Clean separation between frontend and backend logic
+- Agent response parsing and display
+- Tool action visibility for transparency
+- Observation display for debugging and explainability
+- Environment-based API configuration
+- Vue SPA architecture
+
+---
 
 # 💡 Use Cases
 
@@ -277,6 +322,8 @@ Examples:
 - Customer portals
 - Member-only applications
 - Role-based AI systems
+
+---
 
 # 👨‍💻 Author
 
